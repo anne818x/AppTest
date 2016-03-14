@@ -2,37 +2,70 @@ body
 {
   width: 100%;
   height: 100%;
-  padding: 0px;
-  margin: 0px;
+  padding: 0%;
+  margin: 0%;
   background-color: #FFFFFF;
+  overflow: auto;
+}
+
+#container
+{
+     width: 100%;
+  height: 100%;
 }
 
 .icon
 {
-  width: 35px;
-  height: 35px;
-  padding-right: 40px;
+  width: 15%;
+  height: 9%;
+  padding-right: 5%;
+  padding-left: 5%;
+  pointer-events: none;
+   cursor: default;
+}
+
+#headerText
+{
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-family: "Verdana";
+    font-size: 75%;
+    font-weight: bold;
 }
 
 .text
 {
+    float: left;
+    width: 100%;
+    height: 100%;
   font-weight: bold;
-  font-size: 2.0vw;
-  font-family: "Cambria";
-  padding-left: 35px;
+  font-size: 120%;
+  font-family: "Verdana";
 }
 
 .vacancy
 {
-  width: auto;
-  height: 75px;
+    float: left;
+  width: 100%;
+  height: 100%;
   color: #FFFFFF;
-  padding-top: 35px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#vacancyList
+{
+    padding-top: 22%;
+    float: left;
+    width: 100%;
+    height: 85%;
+
 }
 
 .input
 {
-  height: 30px;
+  height: 100%;
   text-align: center;
   color: #0094d0;
   font-weight: bold;
@@ -40,44 +73,56 @@ body
 
 #header
 {
+    float: left;
+    position: fixed;
   width: 100%;
-  height: 75px;
+  height: 5%;
   background-color: #0094d0;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 10%;
+  padding-bottom: 5%;
 }
 
 #logo
 {
+    float: left;
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 5%;
+  left: 5%;
 }
 
 #backbutton
 {
+    float: left;
   position: absolute;
-  right: 25px;
-  top: 25px;
+  right: 5%;
+  top: 5%;
   display: none;
 }
 
 #chosenVacancy
 {
+
+    float: left;
+    width: 100%;
+  height: 100%;
   background-color: #FFFFFF;
   color: #0094d0;
 }
 
 #footer
 {
-  margin-top: 300px;
+    float: left;
+
   width: 100%;
-  height: 150px;
+  height: 20%;
   background-color: #0094d0;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 35px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 5%;
 }
 
 #popUpScreen
@@ -95,5 +140,7 @@ body
 {
   color: #0094d0;
   font-weight: normal;
-  font-size: 1.5vw;
+  font-size: 75%;
+  font-family: "Verdana";
+  
 }

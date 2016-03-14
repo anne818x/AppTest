@@ -6,13 +6,18 @@
         <title>UWV Wajong Vacatures</title>
     </head>
     <body onload="javascript:read()">
+        <div id="container">
       <div id="header">
         <div id="logo"><img src="img/logo.png" alt="logo"/></div>
-        <div id="headerText" class="text">Beschikbare vacatures:</div>
+        <div id="headerText">Beschikbare vacatures:</div>
         <div id="backbutton"><img onclick="javascript:switchToAllVacancies();" src="img/backbutton.png" alt="backbutton"/></div>
       </div>
-      <div id="allVacancies"></div>
+            <div id="vacancyList">
+            <div id="allVacancies">
+            </div>
+            </div>
       <div id="chosenVacancy"></div>
+        </div>
     </body>
     <script type="text/javascript" src="js/read.js"></script>
     <script type="text/javascript" src="js/readAll.js"></script>
