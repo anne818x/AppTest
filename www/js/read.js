@@ -24,6 +24,13 @@ function jsonToArray(result)
 // Voor iedere vacancyTitle in de Javascript array: maak een nieuw div element aan.
 function appendArrayToApp(array)
 {
+      $("#footerLine").append("<div id='footer'></div>");
+
+  $("#footer").append("<div id='email'><input id='inputEmail' class='input' onclick='removeValue(this.id);' type='email' value='Jouw emailadres'></input></div>");
+  $("#footer").append("<div id='phone'><input id='inputPhone' class='input' onclick='removeValue(this.id);' type='tel' value='Jouw telefoonnummer'></input></div>");
+  $("#footer").append("<div id='reactButton'><img onclick='checkCorrectInput();' src='img/react.png' alt='react'/></div>");
+    $("#footerLine").hide();
+    $("#chosenVacancy").hide();
   for(i = 0; i < array.length; i++)
   {
     if(i % 2 == 0)

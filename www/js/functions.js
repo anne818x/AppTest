@@ -25,6 +25,7 @@ function showPopUpScreen(input)
 {
   $("#header").hide();
   $("#chosenVacancy").hide();
+  $("#footerLine").hide();
   $("body").append("<div id='popUpScreen'></div>");
 
   if(input == "Correct")
@@ -55,6 +56,7 @@ function switchToAllVacancies()
   $("#backbutton").hide();
   $("#chosenVacancy").hide();
   $("#allVacancies").show();
+  $("#footerLine").hide();
 };
 
 // Toon de gegevens van de geselecteerde vacature.
@@ -64,4 +66,5 @@ function switchToChosenVacancy()
   $("#allVacancies").hide();
   $("#backbutton").show();
   $("#chosenVacancy").show();
+  $("#footerLine").show();
 };
