@@ -18,7 +18,7 @@ body
 .icon
 {
   width: 15%;
-  height: 9%;
+  height: 100%;
   padding-right: 5%;
   padding-left: 5%;
   pointer-events: none;
@@ -39,7 +39,7 @@ body
 {
   float: left;
   width: 100%;
-  height: 100%;
+  height: 35%;
   font-weight: bold;
   font-size: 120%;
   font-family: "Verdana";
@@ -49,7 +49,7 @@ body
 {
   float: left;
   width: 100%;
-  height: 100%;
+  height: 19%;
   color: #FFFFFF;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -114,7 +114,7 @@ body
 {
   background-color: #FFFFFF;
   color: #0094d0;
-    float: right;
+    float: left;
     width: 100%;
     height: 60%;
     
@@ -122,8 +122,6 @@ body
     left:0%;
    top:20%;
    overflow-y: scroll;
-  
-  
 }
 
 #help
@@ -149,22 +147,49 @@ body
    bottom:0;
 }
 
-#popUpScreen
-{
-  margin-top: 300px;
-  width: 100%;
-  height: 120px;
-  background-color: #0094d0;
-  color: #FFFFFF;
-  text-align: center;
-  padding-top: 45px;
-}
-
 #infoText
 {
   color: #0094d0;
   font-weight: normal;
   font-size: 80%;
   font-family: "Verdana";
+}
+
+#popUpScreen
+{
+  float: left;
+  margin-top: 40%;
+  margin-left: 1%;
+  width: 95%;
+  height: 30%;
+  /*background-color: #0094d0; */
+  background:url(../img/infobackground.png)no-repeat center top;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 5%;
+  border-style: groove;
   
+}
+#internal-popup
+{
+    float:left;
+    width: 100%;
+    height: 80%;
+    
+}
+.ui-content{
+
+     z-index: 1000;
+
+  background-image: url("infobackground.png");
+  background: white;
+ 
+}
+
+#infobutton
+{
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  display: none;
 }

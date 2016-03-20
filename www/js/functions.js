@@ -1,53 +1,73 @@
 // Wanneer een inputveld wordt geselecteerd: verwijder de inhoud.
 function removeValue(id)
 {
-  $("#" + id).val("");
-};
+    $("#" + id).val("");
+}
+;
 
 // Controleer of er een correct emailadres of telefoonnummer is ingevoerd.
 function checkCorrectInput()
 {
-  var email = $("#inputEmail").val();
-  var phone = $("#inputPhone").val();
+    var email = $("#inputEmail").val();
+    var phone = $("#inputPhone").val();
 
-  if((email.indexOf("@") != - 1) && phone.length == 10)
-  {
-    showPopUpScreen("Correct");
-  }
-  else
-  {
-    showPopUpScreen("Wrong");
-  }
-};
+    if ((email.indexOf("@") != -1) && phone.length == 10)
+    {
+        showPopUpScreen("Correct");
+    }
+    else
+    {
+        showPopUpScreen("Wrong");
+    }
+}
+;
+
+function showDialogScreen()
+{
+    $("#internal-popup").show();
+    switchToAllVacancies();
+}
+;
+
+function hideDialogScreen()
+{
+    $("#internal-popup").hide();
+    $("#header").show();
+ 
+    switchToAllVacancies();
+}
+;
 
 // Toon het popupscherm met een positieve of negatieve boodschap. En verstuur een email.
 function showPopUpScreen(input)
 {
-  $("#header").hide();
-  $("#chosenVacancy").hide();
-  $("#footerLine").hide();
-  $("body").append("<div id='popUpScreen'></div>");
+    $("#header").hide();
+    $("#chosenVacancy").hide();
+    $("body").append("<div id='popUpScreen'></div>");
 
-  if(input == "Correct")
-  {
-    $("#popUpScreen").append("<div id='popUpText' class='text'>Bedankt voor je reactie. Je hoort snel van ons!</div>");
-    sendGmail();
-  }
-  else if(input == "Wrong")
-  {
-    $("#popUpScreen").append("<div id='popUpText' class='text'>Oeps! Je email of nummer is verkeerd.</div>");
-  }
-  $("#popUpScreen").append("<div id='popUpButton'><img onclick='hidePopUpScreen();' src='img/ok.png' alt='ok'/></div>");
-};
+    if (input == "Correct")
+    {
+        $("#popUpScreen").append("<div id='popUpText' class='text'>Bedankt voor je reactie. Je hoort van ons binnen 3 werkdagen!</div>");
+        sendGmail();
+    }
+    else if (input == "Wrong")
+    {
+        $("#popUpScreen").append("<div id='popUpText' class='text'>Oeps! Je email of nummer is verkeerd.</div>");
+    }
+    $("#popUpScreen").append("<div id='popUpButton'><img onclick='hidePopUpScreen();' src='img/ok.png' alt='ok'/></div>");
+		
+}
+;
 
 // Verberg het popupscherm.
 function hidePopUpScreen()
 {
-  $("#header").show();
-  $("#popUpScreen").remove();
+    $("#header").show();
+    $("#popUpScreen").remove();
 
-  switchToAllVacancies();
-};
+    switchToAllVacancies();
+}
+;
 
 // Toon het overzicht met alle beschikbare vacatures.
 function switchToAllVacancies()
@@ -57,6 +77,7 @@ function switchToAllVacancies()
   $("#chosenVacancy").hide();
   $("#allVacancies").show();
   $("#footerLine").hide();
+  $("#infobutton").show();
 };
 
 // Toon de gegevens van de geselecteerde vacature.
@@ -67,4 +88,5 @@ function switchToChosenVacancy()
   $("#backbutton").show();
   $("#chosenVacancy").show();
   $("#footerLine").show();
+  $("#infobutton").hide();
 };

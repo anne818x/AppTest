@@ -24,6 +24,7 @@ function jsonToArray(result)
 // Voor iedere vacancyTitle in de Javascript array: maak een nieuw div element aan.
 function appendArrayToApp(array)
 {
+    showDialogScreen();
       $("#footerLine").append("<div id='footer'></div>");
 
   $("#footer").append("<div id='email'><input id='inputEmail' class='input' onclick='removeValue(this.id);' type='email' value='Jouw emailadres'></input></div>");
