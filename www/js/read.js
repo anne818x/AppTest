@@ -32,6 +32,8 @@ function appendArrayToApp(array)
   $("#footer").append("<div id='reactButton'><img onclick='checkCorrectInput();' src='img/react.png' alt='react'/></div>");
     $("#footerLine").hide();
     $("#chosenVacancy").hide();
+    
+    $("#filterbox").show();
   for(i = 0; i < array.length; i++)
   {
     if(i % 2 == 0)

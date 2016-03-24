@@ -54,37 +54,37 @@ function appendToDetailsPage(vacancy, description, requirements, hours, category
   if(categoryID == "1")
   {
     $("#vacancy").css("background-color", "#c7d320");
-    $("#vacancy").prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
+    $("#vacancy").prepend("<img class='icon2' src='img/Icons-06.png' alt='icon'/>");
     chosenBranch = "Tuinbouw";
   }
   else if(categoryID == "2")
   {
     $("#vacancy").css("background-color", "#1b365d");
-    $("#vacancy").prepend("<img class='icon' src='img/Icons-01.png' alt='icon'/>");
+    $("#vacancy").prepend("<img class='icon2' src='img/Icons-01.png' alt='icon'/>");
     chosenBranch = "Horeca";
   }
   else if(categoryID == "3")
   {
     $("#vacancy").css("background-color", "#eb660a");
-    $("#vacancy").prepend("<img class='icon' src='img/Icons-02.png' alt='icon'/>");
+    $("#vacancy").prepend("<img class='icon2' src='img/Icons-02.png' alt='icon'/>");
     chosenBranch = "Productie";
   }
   else if(categoryID == "4")
   {
     $("#vacancy").css("background-color", "#e3251a");
-    $("#vacancy").prepend("<img class='icon' src='img/Icons-03.png' alt='icon'/>");
+    $("#vacancy").prepend("<img class='icon2' src='img/Icons-03.png' alt='icon'/>");
     chosenBranch = "Logistiek";
   }
   else if(categoryID == "5")
   {
     $("#vacancy").css("background-color", "#0c8ece");
-    $("#vacancy").prepend("<img class='icon' src='img/Icons-04.png' alt='icon'/>");
+    $("#vacancy").prepend("<img class='icon2' src='img/Icons-04.png' alt='icon'/>");
     chosenBranch = "Techniek";
   }
   else if(categoryID == "6")
   {
     $("#vacancy").css("background-color", "#ffda05");
-    $("#vacancy").prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+    $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
     chosenBranch = "Overige branches";
   }
 
