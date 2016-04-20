@@ -12,7 +12,7 @@ body
 {
      width: 100%;
   height: 100%;
-  
+  background-color: white;
 }
 
 .icon
@@ -202,18 +202,18 @@ body
 
 #popUpScreen
 {
-  float: left;
-  margin-top: 40%;
-  margin-left: 1%;
+  float: center-left;
+  margin-left: 2%;
   width: 95%;
   height: 30%;
   /*background-color: #0094d0; */
-  background:url(../img/infobackground.png)no-repeat center top;
-  color: #FFFFFF;
+  background:url(../img/infobackground.png) center top;
   text-align: center;
   padding-top: 5%;
-  border-style: groove;
-  
+	position: absolute;
+	top: 10%;
+	left: 0%;
+	border-style: groove;
 }
 #internal-popup
 {

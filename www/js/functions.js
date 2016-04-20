@@ -43,11 +43,13 @@ function showPopUpScreen(input)
 {
     $("#header").hide();
     $("#chosenVacancy").hide();
+
+	
     $("body").append("<div id='popUpScreen'></div>");
 
     if (input == "Correct")
     {
-        $("#popUpScreen").append("<div id='popUpText' class='text'>Bedankt voor je reactie. Je hoort van ons binnen 3 werkdagen!</div>");
+        $("#popUpScreen").append("<div id='popUpText' class='text' >Bedankt voor je reactie. Je hoort van ons binnen 3 werkdagen!</div>");
         sendGmail();
     }
     else if (input == "Wrong")
