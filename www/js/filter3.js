@@ -23,6 +23,7 @@ function jsonToArray4(result)
 // Voor iedere vacancyTitle in de Javascript array: maak een nieuw div element aan.
 function appendArrayToApp4(array)
 {
+  $("#allVacancies").empty();
     showDialogScreen();
       $("#footerLine").append("<div id='footer'></div>");
 
