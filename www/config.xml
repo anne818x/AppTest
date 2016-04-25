@@ -41,6 +41,13 @@
         Define a specific version of PhoneGap to build into your app.
         <preference name="phonegap-version"       value="3.5.0" />
     -->
+	
+	<gap:config-file platform="android" parent="/manifest">
+    <supports-screens 
+        android:xlargeScreens="false" 
+        android:largeScreens="false" 
+        android:smallScreens="false" />
+</gap:config-file>
 
     <!-- Plugins -->
 
