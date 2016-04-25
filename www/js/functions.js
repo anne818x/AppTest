@@ -84,6 +84,19 @@ function switchToAllVacancies()
   
 };
 
+function refreshedAlert()
+{
+    $("#header").hide();
+    $("#chosenVacancy").hide();
+    $("body").append("<div id='popUpScreen'></div>");
+
+    $("#allVacancies").empty();
+    read();
+   
+    $("#popUpScreen").append("<div id='popUpText' class='text'>Page has been refreshed, new vacancies may be available!.</div>");
+}
+;
+
 // Toon de gegevens van de geselecteerde vacature.
 function switchToChosenVacancy()
 {
