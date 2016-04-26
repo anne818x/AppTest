@@ -94,6 +94,7 @@ function refreshedAlert()
     read();
    
     $("#popUpScreen").append("<div id='popUpText' class='text'>Page has been refreshed, new vacancies may be available!.</div>");
+	 $("#popUpScreen").append("<div id='popUpButton'><img onclick='hidePopUpScreen();' src='img/ok.png' alt='ok'/></div>");
 }
 ;
 
