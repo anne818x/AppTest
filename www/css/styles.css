@@ -125,8 +125,9 @@ body
 .leftfilter
 {
     float: left;
-    width: 33.33333%;
+ 
     height: 100%;
+	width: 100%;
 }
 
 .middlefilter
