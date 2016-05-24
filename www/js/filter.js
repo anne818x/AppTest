@@ -92,7 +92,9 @@ function jsonToFullArray(result)
 // Voor iedere vacancyTitle in de Javascript array: maak een nieuw div element aan.
 function appendArrayToApp4(array)
 {
-  showDialogScreen();
+  $("#allVacancies").empty();
+    
+    showDialogScreen();
       $("#footerLine").append("<div id='footer'></div>");
 
   $("#footer").append("<div id='email'><input id='inputEmail' class='input' onclick='removeValue(this.id);' type='email' value='Jouw emailadres'></input></div>");
@@ -103,6 +105,7 @@ function appendArrayToApp4(array)
     
     $("#filterbox").show();
 
+$("#internal-popup").hide();
   for(i = 0; i < array.length; i++)
   {
       if(number === 1 && array[i + 1] === "1")
@@ -156,7 +159,7 @@ function appendArrayToApp4(array)
 function appendAllVacancies(array)
 {
     $("#allVacancies").empty();
-    $("#internal-popup").hide();
+    
     showDialogScreen();
       $("#footerLine").append("<div id='footer'></div>");
 
@@ -167,6 +170,7 @@ function appendAllVacancies(array)
     $("#chosenVacancy").hide();
     
     $("#filterbox").show();
+    $("#internal-popup").hide();
   for(i = 0; i < array.length; i++)
   {
     if(i % 2 == 0)
