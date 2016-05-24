@@ -16,7 +16,7 @@
         <title>UWV Wajong Vacatures</title>
     </head>
 	
-    <body onload="javascript:read()">
+    <body onload="javascript:read(), filterFull()">
         <div id="container">
 		 <div id="internal-popup" data-role="dialog" >
 			<div data-role="content" onclick="javascript:hideDialogScreen();"  >
@@ -50,6 +50,7 @@
     <a href="#" onclick="javascript:filter4(); return false">Logistiek</a>
     <a href="#" onclick="javascript:filter5(); return false">Techniek</a>
     <a href="#" onclick="javascript:filter6(); return false">Overige Branches</a>
+    <a href="#" onclick="javascript:filterFull(); return false">Alle vacatures</a>
   </div>
   
 </div>
