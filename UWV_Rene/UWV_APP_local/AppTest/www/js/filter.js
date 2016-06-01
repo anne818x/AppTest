@@ -118,43 +118,72 @@ function appendArrayToApp4(array)
 
   for(i = 0; i < array.length; i++)
   {
-      if(branchfilter === "Zorg" )
+      if(branchfilter === "Zorg")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#e3251a");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-03.png' alt='icon'/>");
       }
-      else if(branchfilter === "ICT" && array[i + 1] === 2)
+      else if(branchfilter === "ICT")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#1b365d");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-01.png' alt='icon'/>");
       }
-      else if(number === 3 && array[i + 1] == "Horeca")
+      else if(branchfilter === "Horeca")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#eb660a");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-02.png' alt='icon'/>");
       }
-      else if(number === 4 && array[i + 1] == "Agrarisch")
+      else if(branchfilter === "Agrarisch")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#e3251a");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-03.png' alt='icon'/>");
       }
-      else if(number === 5 && array[i + 1] == "Ambacht")
+      else if(branchfilter === "Ambacht")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#0c8ece");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-04.png' alt='icon'/>");
       }
-      else if(number === 6 && array[i + 1] == "Beveiliging")
+      else if(branchfilter === "Beveiliging")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#ffda05");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
       }
-  
+      else if(branchfilter === "Techniek")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#ffda05");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+      }
+      else if(branchfilter === "Bouw")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#ffda05");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+      }
+      else if(branchfilter === "Transport en Logistiek")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#ffda05");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+      }
+      else if(branchfilter === "Detailhandel")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#ffda05");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+      }
+      else if(branchfilter === "Contactcenters")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#ffda05");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+      }
 
       $("#vacancy" + i).click(function()
       {
@@ -163,6 +192,5 @@ function appendArrayToApp4(array)
         vacancy = $(document.elementFromPoint(xMousePoint, yMousePoint)).text();
         readAll(vacancy);
       });
-    
   }
 };
