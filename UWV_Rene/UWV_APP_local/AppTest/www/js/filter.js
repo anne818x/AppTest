@@ -1,10 +1,10 @@
-var number;
+var branchfilter;
 
 function filter1()
 {
   $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
   {
-      number = 1;
+      branchfilter = "Zorg";
     jsonToArray(result);
   });
 };
@@ -13,7 +13,7 @@ function filter2()
 {
   $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
   {
-      number = 2;
+      branchfilter = "ICT";
     jsonToArray(result);
   });
 };
@@ -22,7 +22,7 @@ function filter3()
 {
   $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
   {
-      number = 3;
+      branchfilter = "Horeca";
     jsonToArray(result);
   });
 };
@@ -31,7 +31,7 @@ function filter4()
 {
   $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
   {
-      number = 4;
+      branchfilter = "Agrarisch";
     jsonToArray(result);
   });
 };
@@ -40,7 +40,7 @@ function filter5()
 {
   $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
   {
-      number = 5;
+      branchfilter = "Ambacht";
     jsonToArray(result);
   });
 };
@@ -49,7 +49,47 @@ function filter6()
 {
   $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
   {
-      number = 6;
+     branchfilter = "Beveiliging";
+    jsonToArray(result);
+  });
+};
+function filter7()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Techniek";
+    jsonToArray(result);
+  });
+};
+function filter8()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Bouw";
+    jsonToArray(result);
+  });
+};
+function filter9()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Transport en Logistiek";
+    jsonToArray(result);
+  });
+};
+function filter10()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Contactcenters";
+    jsonToArray(result);
+  });
+};
+function filter11()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Detailhandel";
     jsonToArray(result);
   });
 };
@@ -78,37 +118,37 @@ function appendArrayToApp4(array)
 
   for(i = 0; i < array.length; i++)
   {
-      if(number === 1 && array[i + 1] === "1")
-      {
-          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#c7d320");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
-      }
-      else if(number === 2 && array[i + 1] === "2")
-      {
-          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#1b365d");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-01.png' alt='icon'/>");
-      }
-      else if(number === 3 && array[i + 1] == "3")
-      {
-          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#eb660a");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-02.png' alt='icon'/>");
-      }
-      else if(number === 4 && array[i + 1] == "4")
+      if(branchfilter === "Zorg" )
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#e3251a");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-03.png' alt='icon'/>");
       }
-      else if(number === 5 && array[i + 1] == "5")
+      else if(branchfilter === "ICT" && array[i + 1] === 2)
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#1b365d");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-01.png' alt='icon'/>");
+      }
+      else if(number === 3 && array[i + 1] == "Horeca")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#eb660a");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-02.png' alt='icon'/>");
+      }
+      else if(number === 4 && array[i + 1] == "Agrarisch")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#e3251a");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-03.png' alt='icon'/>");
+      }
+      else if(number === 5 && array[i + 1] == "Ambacht")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#0c8ece");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-04.png' alt='icon'/>");
       }
-      else if(number === 6 && array[i + 1] == "6")
+      else if(number === 6 && array[i + 1] == "Beveiliging")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#ffda05");
