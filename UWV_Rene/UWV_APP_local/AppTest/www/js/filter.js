@@ -154,74 +154,74 @@ function appendArrayToApp4(array)
       if(branchfilter === "Zorg" && array[i + 1] === "Zorg")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#c7d320");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "ca5695");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/zorg.png' alt='icon'/>");
       }
        else if(branchfilter === "Zorg" && array[i + 1] === "zorg")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#c7d320");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#ca5695");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/zorg.png' alt='icon'/>");
       }
       else if(branchfilter === "ICT" && array[i + 1] === "ICT")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#1b365d");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-01.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#20d3a7");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/ict.png' alt='icon'/>");
       }
       else if(branchfilter === "Horeca" && array[i + 1] === "Horeca")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-         $("#vacancy" + i).css("background-color", "#eb660a");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-02.png' alt='icon'/>");
+         $("#vacancy" + i).css("background-color", "#1b365d");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/horeca.png' alt='icon'/>");
       }
       else if(branchfilter === "Agrarische" && array[i + 1] === "Agrarische Sector")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#e3251a");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-03.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#c7d320");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/agrarisch.png' alt='icon'/>");
       }
       else if(branchfilter === "Ambacht" && array[i + 1] === "Ambacht")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#0c8ece");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-04.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#1b5d24");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/ambacht.png' alt='icon'/>");
       }
       else if(branchfilter === "Beveiliging" && array[i + 1] === "Beveiliging")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#3ab0be");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/beveiliging.png' alt='icon'/>");
       }
       else if(branchfilter === "Techniek" && array[i + 1] === "Industrie & Techniek")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#0c8ece");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/techniek.png' alt='icon'/>");
       }
       else if(branchfilter === "Bouw" && array[i + 1] === "Bouw")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#eb660a");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/bouw.png' alt='icon'/>");
       }
       else if(branchfilter === "Transport" && array[i + 1] === "Transport en logistiek")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#e3251a");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/transport en logistiek.png' alt='icon'/>");
       }
       else if(branchfilter === "Detailhandel" && array[i + 1] === "Detailhandel")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/detailhandel.png' alt='icon'/>");
       }
       else if(branchfilter === "Contactcenters" && array[i + 1] === "Contactcenters")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#4c2577");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/contactcenters.png' alt='icon'/>");
       }
 
       $("#vacancy" + i).click(function()
@@ -258,63 +258,63 @@ function appendAllVacancies(array)
 
       if(array[i + 1] == "Zorg")
       {
-        $("#vacancy" + i).css("background-color", "#c7d320");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#ca5695");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/zorg.png' alt='icon'/>");
       }
       else if(array[i + 1] == "zorg")
       {
-        $("#vacancy" + i).css("background-color", "#c7d320");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#ca5695");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/zorg.png' alt='icon'/>");
       }
       else if(array[i + 1] == "ICT")
       {
-        $("#vacancy" + i).css("background-color", "#1b365d");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-01.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#20d3a7");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/ict.png' alt='icon'/>");
       }
       else if(array[i + 1] == "Horeca")
       {
-        $("#vacancy" + i).css("background-color", "#eb660a");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-02.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#1b365d");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/horeca.png' alt='icon'/>");
       }
       else if(array[i + 1] == "Agrarische Sector")
       {
-        $("#vacancy" + i).css("background-color", "#e3251a");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-03.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#c7d320");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/agrarisch.png' alt='icon'/>");
       }
       else if(array[i + 1] == "Ambacht")
       {
-        $("#vacancy" + i).css("background-color", "#0c8ece");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-04.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#1b5d24");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/ambacht.png' alt='icon'/>");
       }
       else if(array[i + 1] == "Beveiliging")
       {
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#3ab0be");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/beveiliging.png' alt='icon'/>");
       }
       else if(array[i + 1] == "Industrie & Techniek")
       {
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#0c8ece");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/techniek.png' alt='icon'/>");
       }
       else if(array[i + 1] == "Bouw")
       {
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#eb660a");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/bouw.png' alt='icon'/>");
       }
       else if(array[i + 1] == "Transport en logistiek")
       {
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#e3251a");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/transport en logistiek.png' alt='icon'/>");
       }
       else if(array[i + 1] == "Contactcenters")
       {
-        $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#4c2577");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/contactcenters.png' alt='icon'/>");
       }
       else if(array[i + 1] == "Detailhandel")
       {
         $("#vacancy" + i).css("background-color", "#ffda05");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/detailhandel.png' alt='icon'/>");
       }
 
       $("#vacancy" + i).click(function()
