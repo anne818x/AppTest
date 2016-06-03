@@ -153,14 +153,14 @@ function appendArrayToApp4(array)
       if(branchfilter === "Zorg" && array[i + 1] === "Zorg")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#e3251a");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-03.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#c7d320");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
       }
        else if(branchfilter === "Zorg" && array[i + 1] === "zorg")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#e3251a");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-03.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#c7d320");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
       }
       else if(branchfilter === "ICT" && array[i + 1] === "ICT")
       {
@@ -171,7 +171,7 @@ function appendArrayToApp4(array)
       else if(branchfilter === "Horeca" && array[i + 1] === "Horeca")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "#eb660a");
+         $("#vacancy" + i).css("background-color", "#eb660a");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-02.png' alt='icon'/>");
       }
       else if(branchfilter === "Agrarische" && array[i + 1] === "Agrarische Sector")
@@ -235,19 +235,11 @@ function appendArrayToApp4(array)
 
 function appendAllVacancies(array)
 {
-    $("#allVacancies").empty();
+   $("#allVacancies").empty();
     
     showDialogScreen();
-      $("#footerLine").append("<div id='footer'></div>");
 
-  $("#footer").append("<div id='email'><input id='inputEmail' class='input' onclick='removeValue(this.id);' type='email' value='Jouw emailadres'></input></div>");
-  $("#footer").append("<div id='phone'><input id='inputPhone' class='input' onclick='removeValue(this.id);' type='tel' value='Jouw telefoonnummer'></input></div>");
-  $("#footer").append("<div id='reactButton'><img onclick='checkCorrectInput();' src='img/react.png' alt='react'/></div>");
-    $("#footerLine").hide();
-    $("#chosenVacancy").hide();
-    
-    $("#filterbox").show();
-    $("#internal-popup").hide();
+$("#internal-popup").hide();
   for(i = 0; i < array.length; i++)
   {
     if(i % 2 == 0)
@@ -256,12 +248,12 @@ function appendAllVacancies(array)
 
       if(array[i + 1] == "Zorg")
       {
-        $("#vacancy" + i).css("background-color", "#e3251a");
+        $("#vacancy" + i).css("background-color", "#c7d320");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
       }
       else if(array[i + 1] == "zorg")
       {
-        $("#vacancy" + i).css("background-color", "#e3251a");
+        $("#vacancy" + i).css("background-color", "#c7d320");
         $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-06.png' alt='icon'/>");
       }
       else if(array[i + 1] == "ICT")
