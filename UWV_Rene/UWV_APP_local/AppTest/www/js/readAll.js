@@ -53,58 +53,54 @@ function appendToDetailsPage(vacancy, description, requirements, hours, branch)
   if(branch == "Zorg")
   {
     $("#vacancy").css("background-color", "#c7d320");
-    $("#vacancy").prepend("<img class='icon2' src='img/Icons-06.png' alt='icon'/>");
+    $("#vacancy").prepend("<img class='icon2' src='img/Icons-03.png' alt='icon'/>");
   }
-  else if(branch == "2")
+  else if(branch == "ICT")
   {
     $("#vacancy").css("background-color", "#1b365d");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-01.png' alt='icon'/>");
-    chosenBranch = "Horeca";
   }
-  else if(branch == "3")
+  else if(branch == "Horeca")
   {
     $("#vacancy").css("background-color", "#eb660a");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-02.png' alt='icon'/>");
-    chosenBranch = "Productie";
   }
-  else if(branch == "4")
+  else if(branch == "Agrarisch")
   {
     $("#vacancy").css("background-color", "#e3251a");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-03.png' alt='icon'/>");
-    chosenBranch = "Logistiek";
   }
-  else if(branch == "5")
+  else if(branch == "Ambacht")
   {
     $("#vacancy").css("background-color", "#0c8ece");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-04.png' alt='icon'/>");
-    chosenBranch = "Techniek";
   }
-  else if(branch == "6")
+  else if(branch == "Beveiliging")
   {
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
   }
-  else if(branch == "6")
+  else if(branch == "Techniek")
   {
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
   }
-  else if(branch == "6")
+  else if(branch == "Bouw")
   {
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
   }
-  else if(branch == "6")
+  else if(branch == "Transport en Logistiek")
   {
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
   }
-  else if(branch == "6")
+  else if(branch == "Detailhandel")
   {
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
   }
-  else if(branch == "6")
+  else if(branch == "Contactcenters")
   {
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
