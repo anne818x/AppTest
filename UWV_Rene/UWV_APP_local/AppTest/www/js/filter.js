@@ -95,7 +95,14 @@ function filter11()
     jsonToArray(result);
   });
 };
-
+function filter12()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Overige / Uniforme beroepen";
+    jsonToArray(result);
+  });
+};
 function filterFull()
 {
     $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
@@ -154,7 +161,7 @@ function appendArrayToApp4(array)
       if(branchfilter === "Zorg" && array[i + 1] === "Zorg")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
-        $("#vacancy" + i).css("background-color", "ca5695");
+        $("#vacancy" + i).css("background-color", "#ca5695");
         $("#vacancy" + i).prepend("<img class='icon' src='img/zorg.png' alt='icon'/>");
       }
        else if(branchfilter === "Zorg" && array[i + 1] === "zorg")
@@ -223,7 +230,12 @@ function appendArrayToApp4(array)
         $("#vacancy" + i).css("background-color", "#4c2577");
         $("#vacancy" + i).prepend("<img class='icon' src='img/contactcenters.png' alt='icon'/>");
       }
-
+		 else if(branchfilter === "Overige / Uniforme beroepen" && array[i + 1] === "Overige / Uniforme beroepen")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#000000");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/overig.png' alt='icon'/>");
+      }
       $("#vacancy" + i).click(function()
       {
         xMousePoint = event.clientX;
@@ -316,7 +328,12 @@ function appendAllVacancies(array)
         $("#vacancy" + i).css("background-color", "#ffda05");
         $("#vacancy" + i).prepend("<img class='icon' src='img/detailhandel.png' alt='icon'/>");
       }
-
+	    else if(array[i + 1] == "Overige / Uniforme beroepen")
+      {
+        $("#vacancy" + i).css("background-color", "#000000");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/overig.png' alt='icon'/>");
+      }
+//Overige / Uniforme beroepen
       $("#vacancy" + i).click(function()
       {
         xMousePoint = event.clientX;

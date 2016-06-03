@@ -110,7 +110,12 @@ function appendToDetailsPage(vacancy, description, requirements, hours, branch)
     $("#vacancy").css("background-color", "#4c2577");
         $("#vacancy").prepend("<img class='icon' src='img/contactcenters.png' alt='icon'/>");
   }
-
+  else if(branch == "Overige / Uniforme beroepen")
+  {
+    $("#vacancy").css("background-color", "#000000");
+        $("#vacancy").prepend("<img class='icon' src='img/overig.png' alt='icon'/>");
+  }
+//Overige / Uniforme beroepen
   $("#chosenVacancy").append("<div class='text'><h4><u>Branch:</u></h4><p id='infoText'>" + branch + "</p></div>");
   $("#chosenVacancy").append("<div class='text'><h4><u>Aantal Uren Per Week:</u></h4><p id='infoText'>" + hours + "</p id='infoText'></div>");
   $("#chosenVacancy").append("<div class='text'><h4><u>Omschrijving Werkzaamheden:</u></h4><p id='infoText'>" + description + "</p></div>");
