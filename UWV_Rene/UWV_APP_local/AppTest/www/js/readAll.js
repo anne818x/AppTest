@@ -55,6 +55,11 @@ function appendToDetailsPage(vacancy, description, requirements, hours, branch)
     $("#vacancy").css("background-color", "#c7d320");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-03.png' alt='icon'/>");
   }
+  if(branch == "zorg")
+  {
+    $("#vacancy").css("background-color", "#c7d320");
+    $("#vacancy").prepend("<img class='icon2' src='img/Icons-03.png' alt='icon'/>");
+  }
   else if(branch == "ICT")
   {
     $("#vacancy").css("background-color", "#1b365d");
@@ -65,7 +70,7 @@ function appendToDetailsPage(vacancy, description, requirements, hours, branch)
     $("#vacancy").css("background-color", "#eb660a");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-02.png' alt='icon'/>");
   }
-  else if(branch == "Agrarisch")
+  else if(branch == "Agrarische Sector")
   {
     $("#vacancy").css("background-color", "#e3251a");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-03.png' alt='icon'/>");
@@ -80,7 +85,7 @@ function appendToDetailsPage(vacancy, description, requirements, hours, branch)
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
   }
-  else if(branch == "Techniek")
+  else if(branch == "Industrie & Techniek")
   {
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
@@ -90,7 +95,7 @@ function appendToDetailsPage(vacancy, description, requirements, hours, branch)
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
   }
-  else if(branch == "Transport en Logistiek")
+  else if(branch == "Transport en logistiek")
   {
     $("#vacancy").css("background-color", "#ffda05");
     $("#vacancy").prepend("<img class='icon2' src='img/Icons-05.png' alt='icon'/>");
