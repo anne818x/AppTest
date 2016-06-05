@@ -115,6 +115,11 @@ function appendToDetailsPage(vacancy, description, requirements, hours, branch)
     $("#vacancy").css("background-color", "#000000");
         $("#vacancy").prepend("<img class='icon' src='img/overig.png' alt='icon'/>");
   }
+  else if(branch !== "Zorg" ||  branch !== "zorg" || branch !== "ICT" || branch !== "Horeca" || branch !== "Agrarische Sector" || branch !== "Ambacht" || branch !== "Beveiliging" || branch !== "Industrie & Techniek" || branch !== "Bouw" || branch !== "Transport en logistiek" || branch !== "Contactcenters" || branch !== "Detailhandel" || branch !== "Overige / Uniforme beroepen")
+      {
+        $("#vacancy" + i).css("background-color", "#32cd32");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+      }
 //Overige / Uniforme beroepen
   $("#chosenVacancy").append("<div class='text'><h4><u>Branch:</u></h4><p id='infoText'>" + branch + "</p></div>");
   $("#chosenVacancy").append("<div class='text'><h4><u>Aantal Uren Per Week:</u></h4><p id='infoText'>" + hours + "</p id='infoText'></div>");
