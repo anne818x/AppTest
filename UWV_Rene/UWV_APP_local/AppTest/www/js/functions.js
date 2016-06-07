@@ -43,6 +43,7 @@ function showPopUpScreen(input)
 {
     $("#header").hide();
     $("#chosenVacancy").hide();
+	$("#chosenVacancyAll").hide();
 
 	
     $("body").append("<div id='popUpScreen'></div>");
@@ -77,6 +78,7 @@ function switchToAllVacancies()
   $("#headerText").text("Beschikbare \n Vacatures:");
   $("#backbutton").hide();
   $("#chosenVacancy").hide();
+  $("#chosenVacancyAll").hide();
   $("#allVacancies").show();
   $("#footerLine").hide();
   $("#infobutton").show();
@@ -88,6 +90,7 @@ function refreshedAlert()
 {
     $("#header").hide();
     $("#chosenVacancy").hide();
+	$("#chosenVacancyAll").hide();
     $("body").append("<div id='popUpScreen'></div>");
 
     $("#allVacancies").empty();
@@ -105,6 +108,7 @@ function switchToChosenVacancy()
   $("#allVacancies").hide();
   $("#backbutton").show();
   $("#chosenVacancy").show();
+  $("#chosenVacancyAll").show();
   $("#footerLine").show();
   $("#infobutton").hide();
   $("#filterbox").hide();
