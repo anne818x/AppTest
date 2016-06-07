@@ -333,12 +333,14 @@ function appendAllVacancies(array)
         $("#vacancy" + i).css("background-color", "#000000");
         $("#vacancy" + i).prepend("<img class='icon' src='img/overig.png' alt='icon'/>");
       }
+	  
+	  //Overige / Uniforme beroepen
        else if(array[i + 1] !== "Zorg" ||  array[i + 1] !== "zorg" || array[i + 1] !== "ICT" || array[i + 1] !== "Horeca" || array[i + 1] !== "Agrarische Sector" || array[i + 1] !== "Ambacht" || array[i + 1] !== "Beveiliging" || array[i + 1] !== "Industrie & Techniek" || array[i + 1] !== "Bouw" || array[i + 1] !== "Transport en logistiek" || array[i + 1] !== "Contactcenters" || array[i + 1] !== "Detailhandel" || array[i + 1] !== "Overige / Uniforme beroepen")
       {
-        $("#vacancy" + i).css("background-color", "#32cd32");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/Icons-05.png' alt='icon'/>");
+        $("#vacancy" + i).css("background-color", "#000000");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/overig.png' alt='icon'/>");
       }
-//Overige / Uniforme beroepen
+
       $("#vacancy" + i).click(function()
       {
         xMousePoint = event.clientX;
@@ -348,6 +350,4 @@ function appendAllVacancies(array)
       });
     }
   }
-
-          
 }
