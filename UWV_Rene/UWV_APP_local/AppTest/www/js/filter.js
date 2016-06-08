@@ -186,7 +186,7 @@ function appendArrayToApp4(array)
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#c7d320");
-        $("#vacancy" + i).prepend("<img class='icon' src='img/agrarisch.png' alt='icon'/>");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/agrarisch.png' alt='icon' />");
       }
       else if(branchfilter === "Ambacht" && array[i + 1] === "Ambacht")
       {

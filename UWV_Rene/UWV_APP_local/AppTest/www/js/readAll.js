@@ -26,8 +26,10 @@ function getDetailsFromArray(vacancy, array)
 {
   var description;
   var requirements;
-  var hours;
+  var minhours;
+  var maxhours;
   var branch;
+  var locations;
 
   for(i = 0; i < array.length; i++)
   {
@@ -35,15 +37,17 @@ function getDetailsFromArray(vacancy, array)
     {
       description = array[i + 2];
       requirements = array[i + 3];
-      hours = array[i + 4];
+	  minhours = array[i + 6];
+      maxhours = array[i + 4];
       branch = array[i + 1];
+	  locations = array[i + 5];
     }
   }
-  appendToDetailsPage(vacancy, description, requirements, hours, branch);
+  appendToDetailsPage(vacancy, description, requirements, maxhours, minhours, branch, locations);
 };
 
 // Voeg de specifieke gegevens toe aan het div element "chosenVacancy".
-function appendToDetailsPage(vacancy, description, requirements, hours, branch)
+function appendToDetailsPage(vacancy, description, requirements, maxhours, minhours, branch, locations)
 {
   $("#chosenVacancy").empty();
   $("#chosenVacancyAll").empty();
@@ -122,10 +126,14 @@ function appendToDetailsPage(vacancy, description, requirements, hours, branch)
 	  
 
 //Overige / Uniforme beroepen
-  $("#chosenVacancyAll").append("<div class='text'><h4><u>Branch:</u></h4><p id='infoText'>" + branch + "</p></div>");
-  $("#chosenVacancyAll").append("<div class='text'><h4><u>Aantal Uren Per Week:</u></h4><p id='infoText'>" + hours + "</p id='infoText'></div>");
-  $("#chosenVacancyAll").append("<div class='text'><h4><u>Omschrijving Werkzaamheden:</u></h4><p id='infoText'>" + description + "</p></div>");
-  $("#chosenVacancyAll").append("<div class='text'><h4><u>Eisen:</u></h4><p id='infoText'>" + requirements + "</p></div>");
+  $("#chosenVacancyAll").append("<div class='text'><h4><u>Branch:</u></h4><p id='infoText'>" + branch + " </p></div>");
+  $("#chosenVacancyAll").append("<div class='text'><h4><u>Werk locatie</u></h4><p id='infoText'>" + locations + " </p id='infoText'></div>");
+  $("#chosenVacancyAll").append("<div class='text'><h4><u>Minimum uren per week:</u></h4><p id='infoText'>" + minhours + " </p id='infoText'></div>");
+  $("#chosenVacancyAll").append("<div class='text'><h4><u>Maximum uren per week:</u></h4><p id='infoText'>" + maxhours + " </p id='infoText'></div>");
+  $("#chosenVacancyAll").append("<div class='text'><h4><u>Omschrijving Werkzaamheden:</u></h4><p id='infoText'>" + description + "\n </p></div>");
+  $("#chosenVacancyAll").append("<div class='text'><h4><u>Eisen:</u></h4><p id='infoText'>" + requirements + "\n </p></div>");
+  
+  
 
   switchToChosenVacancy();
 };
