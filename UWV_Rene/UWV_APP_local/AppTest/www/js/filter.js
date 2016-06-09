@@ -158,6 +158,8 @@ function appendArrayToApp4(array)
 
   for(i = 0; i < array.length; i++)
   {
+	  if(i % 3 == 0)
+	  {
       if(branchfilter === "Zorg" && array[i + 1] === "Zorg")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
@@ -244,6 +246,7 @@ function appendArrayToApp4(array)
         readAll(vacancy);
       });
   }
+  }
 };
 
 function appendAllVacancies(array)
@@ -264,7 +267,7 @@ function appendAllVacancies(array)
     $("#internal-popup").hide();
   for(i = 0; i < array.length; i++)
   {
-    if(i % 2 == 0)
+    if(i % 3 == 0)
     {
       $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
 

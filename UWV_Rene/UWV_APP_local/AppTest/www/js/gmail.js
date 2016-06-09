@@ -60,6 +60,22 @@ function sendGmail()
   tel = hash(tel);
   var vacancyid;
   var vacancytitle = $("#vacancy").text();
+  
+  
+  $.ajax({
+			url: "http://uwvwajongstenden.nl/Gmail/sendmail.php",
+			type: "POST",
+			dataType: "json",
+			data: {type:"yes", mail:email, phone:tel, nummer:vacancyid, titel:vacancytitle},
+			ContentType: "application/json",
+			success: function (response) {
+					//alert(JSON.stringify(response));
+			},
+				error: function (err) {
+					//alert(JSON.stringify(err));
+			}
+		});
+};
   // Ontvang alle database gegevens van readAll.php als JSON object.
 
   function getVacancyNumber(vacancytitle)
@@ -81,20 +97,9 @@ function sendGmail()
       vacancyid = array[i + 0];
     }
   }
-});
-}
-
-  $.ajax({
-			url: "http://uwvwajongstenden.nl/Gmail/sendmail.php",
-			type: "POST",
-			dataType: "json",
-			data: {type:"yes", mail:email, phone:tel, nummer:vacancyid, titel:vacancytitle},
-			ContentType: "application/json",
-			success: function (response) {
-					//alert(JSON.stringify(response));
-			},
-				error: function (err) {
-					//alert(JSON.stringify(err));
-			}
-		});
+})
 };
+
+
+  
+
