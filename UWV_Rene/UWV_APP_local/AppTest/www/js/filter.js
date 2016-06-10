@@ -91,7 +91,7 @@ function filter11()
 {
   $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
   {
-     branchfilter = "Detailhandel";
+     branchfilter = "Secretarieel / administratief";
     jsonToArray(result);
   });
 };
@@ -100,6 +100,42 @@ function filter12()
   $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
   {
      branchfilter = "Overige / Uniforme beroepen";
+    jsonToArray(result);
+  });
+};
+
+function filter13()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Groothandel";
+    jsonToArray(result);
+  });
+};
+
+function filter14()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Schoonmaak";
+    jsonToArray(result);
+  });
+};
+
+function filter15()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Zakelijke dienstverlening";
+    jsonToArray(result);
+  });
+};
+
+function filter16()
+{
+  $.getJSON("http://uwvwajongstenden.nl/App/read.php", function(result)
+  {
+     branchfilter = "Zorg & Welzijn";
     jsonToArray(result);
   });
 };
@@ -226,12 +262,41 @@ function appendArrayToApp4(array)
         $("#vacancy" + i).css("background-color", "#ffda05");
         $("#vacancy" + i).prepend("<img class='icon' src='img/detailhandel.png' alt='icon'/>");
       }
-      else if(branchfilter === "Contactcenters" && array[i + 1] === "Contactcenters")
+      else if(branchfilter === "Secretarieel / administratief" && array[i + 1] === "Secretarieel / administratief")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
         $("#vacancy" + i).css("background-color", "#4c2577");
         $("#vacancy" + i).prepend("<img class='icon' src='img/contactcenters.png' alt='icon'/>");
       }
+
+      else if(branchfilter === "Schoonmaak" && array[i + 1] === "Schoonmaak")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#4c2577");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/schoonmaak.png' alt='icon'/>");
+      }
+
+      else if(branchfilter === "Groothandel" && array[i + 1] === "Groothandel")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#4c2577");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/groothandel.png' alt='icon'/>");
+      }
+
+      else if(branchfilter === "Zakelijke dienstverlening" && array[i + 1] === "Zakelijke dienstverlening")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#4c2577");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/zakelijke dienstverlening.png' alt='icon'/>");
+      }
+
+      else if(branchfilter === "Zorg & Welzijn" && array[i + 1] === "Zorg & Welzijn")
+      {
+          $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
+        $("#vacancy" + i).css("background-color", "#4c2577");
+        $("#vacancy" + i).prepend("<img class='icon' src='img/zorg.png' alt='icon'/>");
+      }
+
 		 else if(branchfilter === "Overige / Uniforme beroepen" && array[i + 1] === "Overige / Uniforme beroepen")
       {
           $("#allVacancies").append("<div id='vacancy"+ i +"' class='vacancy text'>"+ array[i] + "</div>");
