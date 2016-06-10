@@ -31,18 +31,19 @@ function getDetailsFromArray(vacancy, array)
   var branch;
   var locations;
 
-  for(i = 0; i < array.length; i++)
+  for(i = 0; i < array.length; i += 8)
   {
-    if(vacancy == array[i])
+    if(vacancy == array[i + 1])
     {
-      description = array[i + 2];
-      requirements = array[i + 3];
-	  minhours = array[i + 6];
-      maxhours = array[i + 4];
-      branch = array[i + 1];
-	  locations = array[i + 5];
+      description = array[i + 3];
+      requirements = array[i + 4];
+	  minhours = array[i + 7];
+      maxhours = array[i + 5];
+      branch = array[i + 2];
+	  locations = array[i + 6];
     }
   }
+  
   appendToDetailsPage(vacancy, description, requirements, maxhours, minhours, branch, locations);
 };
 
@@ -130,8 +131,9 @@ function appendToDetailsPage(vacancy, description, requirements, maxhours, minho
   $("#chosenVacancyAll").append("<div class='text'><h4><u>Werk locatie</u></h4><p id='infoText'>" + locations + " </p id='infoText'></div>");
   $("#chosenVacancyAll").append("<div class='text'><h4><u>Minimum uren per week:</u></h4><p id='infoText'>" + minhours + " </p id='infoText'></div>");
   $("#chosenVacancyAll").append("<div class='text'><h4><u>Maximum uren per week:</u></h4><p id='infoText'>" + maxhours + " </p id='infoText'></div>");
-  $("#chosenVacancyAll").append("<div class='text'><h4><u>Omschrijving Werkzaamheden:</u></h4><p id='infoText'>" + description + "\n </p></div>");
-  $("#chosenVacancyAll").append("<div class='text'><h4><u>Eisen:</u></h4><p id='infoText'>" + requirements + "\n </p></div>");
+  $("#chosenVacancyAll").append("<div class='text'><h4><u>Omschrijving Werkzaamheden:</u></h4><p id='infoText'> " + description + "</p></div>");
+  $("#chosenVacancyAll").append("<div class='text'><p id='infoText'> </p></div>");
+  $("#chosenVacancyAll").append("<div class='text'><h4><u>Eisen:</u></h4><p id='infoText'>" + requirements + " </p></div>");
   
   
 
